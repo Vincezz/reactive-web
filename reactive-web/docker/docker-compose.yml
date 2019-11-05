@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=reactive-sample
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - D:\Dev\mysql-data:/var/lib/mysql
